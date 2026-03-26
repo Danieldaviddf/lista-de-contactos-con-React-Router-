@@ -34,14 +34,13 @@ const eliminar = (id) => {
   };
 
 
-
 useEffect(() => {
 	contacto()
 }, [])
 
 	return (
 		<div className="text-center mt-5">
-			<Card datos={datos} eliminar={eliminar}/>
+			<Card datos={datos} eliminar={eliminar} actualizar={contacto}/>
 		</div>
 	);
 }; 

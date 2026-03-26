@@ -7,7 +7,7 @@ export const AddContact = () => {
   const {store, dispatch} =useGlobalReducer()
 
     return (
-        <div className="text-center mt-5">
+        <div className="container-row text-center mt-5">
             <Form/>
         </div>
     );
