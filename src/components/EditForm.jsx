@@ -44,7 +44,7 @@ const EditForm = ({ datos, onClose, actualizar }) => {
   };
 
   return (
-    <div className="card p-4 mt-3 shadow">
+    <div className="card p-4 mt-3">
       <h3>Editar Registro</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -52,16 +52,16 @@ const EditForm = ({ datos, onClose, actualizar }) => {
           <input type="text" name="name" className="form-label" value={formData.name} onChange={handleChange} />
         </div>
         <div className="mb-3">
-          <label className="form-label">Teléfono</label>
-          <input type="text" name="phone" className="form-label" value={formData.phone} onChange={handleChange} />
+          <label className="form-label">Phone</label>
+          <input type="text" name="name" className="form-label" value={formData.phone} onChange={handleChange} />
         </div>
         <div className="mb-3">
           <label className="form-label">Email</label>
           <input type="text" name="email" className="form-label" value={formData.email} onChange={handleChange} />
         </div>
         <div className="mb-3">
-          <label className="form-label">Dirección</label>
-          <input type="text" name="address" className="form-label" value={formData.address} onChange={handleChange} />
+          <label className="form-label">Address</label>
+          <input type="text" name="name" className="form-label" value={formData.address} onChange={handleChange} />
         </div>
 
         <button type="submit" className="btn btn-success me-2">Guardar Cambios</button>

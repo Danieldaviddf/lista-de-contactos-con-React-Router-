@@ -36,21 +36,21 @@ export const Form = () => {
             <form style={{width: 600}}>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-                    <input type="email" className="form-control" onChange={(e)=>{setName(e.target.value)}} value={name} id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                    <input type="text" className="form-control" onChange={(e)=>{setName(e.target.value)}} value={name} id="exampleInputEmail1" aria-describedby="emailHelp"/>
                     
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">phone</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" onChange={(e)=>{setPhone(e.target.value)}} value={phone} />
+                    <input type="text" className="form-control" id="exampleInputPassword1" onChange={(e)=>{setPhone(e.target.value)}} value={phone} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={(e)=>{setEmail(e.target.value)}} value={email}  />
+                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={(e)=>{setEmail(e.target.value)}} value={email}  />
                     
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Adress</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" onChange={(e)=>{setAddress(e.target.value)}} value={address} />
+                    <input type="text" className="form-control" id="exampleInputPassword1" onChange={(e)=>{setAddress(e.target.value)}} value={address} />
                 </div>
                     <button type="button" className="btn btn-primary" onClick={handleClick}>Mandame</button>
                 <Link to="/">
