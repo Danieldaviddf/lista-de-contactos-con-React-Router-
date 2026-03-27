@@ -57,7 +57,7 @@ const EditForm = ({ datos, onClose, actualizar }) => {
         </div>
         <div className="mb-3">
           <label className="form-label">Email</label>
-          <input type="email" name="email" className="form-label" value={formData.email} onChange={handleChange} />
+          <input type="text" name="email" className="form-label" value={formData.email} onChange={handleChange} />
         </div>
         <div className="mb-3">
           <label className="form-label">Dirección</label>

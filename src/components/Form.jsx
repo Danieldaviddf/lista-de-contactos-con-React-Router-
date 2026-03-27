@@ -18,9 +18,7 @@ export const Form = () => {
       })
     })
       .then((res) => res.json())
-      .then((data) => {
-        console.log("Creado:", data);
-      })
+      .then((data) => {console.log("Creado:", data);})
       .catch((error) => console.log(error));
   };
 
