@@ -16,13 +16,20 @@ return data;})
 }
 
 
-const contacto = () =>{
-	fetch('https://playground.4geeks.com/contact/agendas/alexis12', {method: "GET"})
-	.then((res)=> {if(res.status === 404){
-			agendaNueva()
-		} return res.json()})
-	.then((data)=>setDatos(data.contacts))
-	.catch(error => console.log(error))
+async function contacto(){
+	try{
+		let response = await fetch('https://playground.4geeks.com/contact/agendas/alexis12', {method: "GET"});
+		let data = await response.json() 
+		if(!response.ok){agendaNueva()}
+
+		return setDatos(data.contacts)
+	} catch(error) {
+		return console.log(error)
+	}
+	
+
+
+	
 }
 
 const eliminar = (id) => {
